@@ -1,17 +1,33 @@
-# @unction/tempLate
+# @unction/mapKeys
+
 
 ![Tests][BADGE_TRAVIS]
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> mixed -> mixed
+> (KeyType -> KeyType) -> IterableType -> IterableType
 
-An example function.
+Like ramda's map, but instead of the value it maps over keys.
 
 ``` javascript
-tempLate(1) // 1
+const attributes = {
+  name: "Kurtis Rainbolt-Greene",
+  createdAt: new Date()
+}
+
+mapKeys(kebab)(attributes)
 ```
 
-[BADGE_TRAVIS]: https://img.shields.io/travis/unctionjs/tempLate.svg?maxAge=2592000&style=flat-square
+Would return:
+
+``` javascript
+{
+  name: "Kurtis Rainbolt-Greene",
+  "created-at": new Date()
+}
+```
+
+[BADGE_TRAVIS]: https://img.shields.io/travis/unctionjs/mapKeys.svg?maxAge=2592000&style=flat-square
+
 [BADGE_STABILITY]: https://img.shields.io/badge/stability-strong-green.svg?maxAge=2592000&style=flat-square
-[BADGE_DEPENDENCY]: https://img.shields.io/david/unctionjs/tempLate.svg?maxAge=2592000&style=flat-square
+[BADGE_DEPENDENCY]: https://img.shields.io/david/unctionjs/mapKeys.svg?maxAge=2592000&style=flat-square

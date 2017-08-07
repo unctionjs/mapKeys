@@ -1,7 +1,7 @@
 {
-  "name": "@unction/template",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@unction/mapkeys",
+  "version": "2.0.3",
+  "description": "Like map but over the key instead of the value",
   "keywords": [
     "unction",
     "functional"
@@ -42,9 +42,10 @@
     "flow": "0.2.3",
     "flow-bin": "0.51.1",
     "flow-typed": "2.1.3",
-    "tap": "10.3.3"
+    "tap": "10.3.3",
+    "ramda": "0.24.1"
   },
   "dependencies": {
-    "ramda": "0.24.1"
+    "@unction/mapkeyswithvaluekey": "^1.0.3"
   }
 }

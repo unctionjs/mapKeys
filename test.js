@@ -1,13 +1,18 @@
 /* eslint-disable flowtype/require-parameter-type, flowtype/require-return-type */
-import {test} from "tap"
+import {same} from "tap"
+import {replace} from "ramda"
 
-import tempLate from "./"
+import mapKeys from "./"
 
-test(({same, end}) => {
-  same(
-    tempLate(true),
-    false
-  )
-
-  end()
-})
+same(
+  mapKeys(
+    replace(/new/)("")
+  )({
+    newLabel: "1",
+    newValue: "2",
+  }),
+  {
+    Label: "1",
+    Value: "2",
+  }
+)
