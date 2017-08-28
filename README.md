@@ -5,7 +5,7 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> (KeyType -> KeyType) -> IterableType -> IterableType
+> (KeyType -> KeyType) -> FunctorType -> FunctorType
 
 Like ramda's map, but instead of the value it maps over keys.
 
