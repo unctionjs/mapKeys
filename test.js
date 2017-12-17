@@ -21,26 +21,25 @@ test("Object", ({same, end}) => {
   end()
 })
 
-// NOTE: tsame doesn't know how to deal with maps
-// test("Map", ({same, end}) => {
-//   same(
-//     mapKeys(
-//       replace(/new/)("")
-//     )(
-//       new Map(
-//         [
-//           ["newLabel", "1"],
-//           ["newValue", "2"],
-//         ]
-//       )
-//     ),
-//     new Map(
-//       [
-//         ["label", "1"],
-//         ["label", "2"],
-//       ]
-//     )
-//   )
-//
-//   end()
-// })
+test("Map", ({same, end}) => {
+  same(
+    mapKeys(
+      replace(/new/)("")
+    )(
+      new Map(
+        [
+          ["newLabel", "1"],
+          ["newValue", "2"],
+        ]
+      )
+    ),
+    new Map(
+      [
+        ["Label", "1"],
+        ["Value", "2"],
+      ]
+    )
+  )
+
+  end()
+})
