@@ -1,8 +1,8 @@
 /* eslint-disable flowtype/require-return-type */
-import {test} from "tap"
-import {replace} from "ramda"
+import {test} from "tap";
+import {replace} from "ramda";
 
-import mapKeys from "./index"
+import mapKeys from "./index";
 
 test("Object", ({same, end}) => {
   same(
@@ -16,10 +16,10 @@ test("Object", ({same, end}) => {
       Label: "1",
       Value: "2",
     }
-  )
+  );
 
-  end()
-})
+  end();
+});
 
 test("Map", ({same, end}) => {
   same(
@@ -39,7 +39,7 @@ test("Map", ({same, end}) => {
         ["Value", "2"],
       ]
     )
-  )
+  );
 
-  end()
-})
+  end();
+});
