@@ -52,7 +52,7 @@
     "tap": "12.6.1"
   },
   "dependencies": {
-    "@unction/mapkeyswithvaluekey": "8.0.0"
+    "@unction/mapkeyswithvaluekey": "9.1.0"
   },
   "nyc": {
     "require": [
