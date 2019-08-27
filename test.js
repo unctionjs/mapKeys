@@ -1,8 +1,8 @@
-/* eslint-disable flowtype/require-return-type */
+
 import {test} from "tap";
 import {replace} from "ramda";
 
-import mapKeys from "./index";
+import mapKeys from "./";
 
 test("Object", ({same, end}) => {
   same(
