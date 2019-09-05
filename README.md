@@ -4,7 +4,7 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> MapperFunctionType => KeyedFunctorType => KeyedFunctorType
+> MapperFunctionType<A, B> => KeyedEnumerableType<B, A> => KeyedEnumerableType<B>
 
 Map over a keyed functor's keys and return a new keyed functor having mapped the keys
 

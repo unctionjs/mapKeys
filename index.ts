@@ -1,6 +1,9 @@
 import mapKeysWithValueKey from "@unction/mapkeyswithvaluekey";
-export default function mapKeys (unction) {
-  return function mapKeysUnction (functor) {
-    return mapKeysWithValueKey(() => (key) => unction(key))(functor);
+import {MapperFunctionType} from "./types";
+import {KeyedEnumerableType} from "./types";
+
+export default function mapKeys<A, B> (mapper: MapperFunctionType<A, B>) {
+  return function mapKeysUnction (enumerable: KeyedEnumerableType<B, A>): KeyedEnumerableType<B> {
+    return mapKeysWithValueKey(() => (key: A) => mapper(key))(enumerable);
   };
 }
