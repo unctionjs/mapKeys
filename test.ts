@@ -1,7 +1,7 @@
 
 import {replace} from "ramda";
 
-import mapKeys from "./index.ts";
+import mapKeys from "./index";
 
 test("Object", () => {
   expect(mapKeys(
