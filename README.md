@@ -4,7 +4,7 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> MapperFunctionType<A, B> => KeyedEnumerableType<B, A> => KeyedEnumerableType<B>
+> MapperFunctionType<A, B> => Array<A> | Set<A> | Record<string | number | symbol, B> | Map<B, A> | string => KeyedArray<B> | Set<B> | RecordType<B, unknown> | string
 
 Map over a keyed functor's keys and return a new keyed functor having mapped the keys
 
