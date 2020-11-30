@@ -1,6 +1,6 @@
 {
   "name": "@unction/mapkeys",
-  "version": "10.12.0",
+  "version": "10.13.0",
   "description": "Like map but over the key instead of the value",
   "keywords": [
     "unction",
